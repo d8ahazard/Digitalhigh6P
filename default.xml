@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="github"
+           fetch="https://github.com" />
   <remote  name="aosp"
-           fetch=".." />
-  <remote name="DH" fetch="https://github.com/d8ahazard" />
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+  <remote name="DH" fetch="https://github.com/d8ahazard/" />
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
   <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
-           sync-j="16" />
+           sync-c="true"
+           sync-j="4" />
 
   <project path="build" name="platform_build" groups="pdk,tradefed" remote="DH" >
     <copyfile src="core/root.mk" dest="Makefile" />
