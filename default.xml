@@ -6,6 +6,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+  <remote name="pure"
+           fetch="https://github.com/PureNexusProject/" /> 
   <remote name="DH" fetch="https://github.com/d8ahazard/" revision="master"/>
   <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
@@ -13,7 +15,7 @@
            sync-j="4" />
 		   
 <!-- DH Repositories -->	
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="DH" revision="nougat-release" >
+  <project path="build" name="android_build" groups="pdk" remote="pure" revision="n" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="device/huawei/angler" name="angler_device" groups="device,angler,broadcom_pdk" remote="DH" />
