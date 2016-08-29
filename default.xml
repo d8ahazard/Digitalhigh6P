@@ -18,8 +18,8 @@
   </project>
   <project path="device/huawei/angler" name="angler_device" groups="device,angler,broadcom_pdk" remote="DH" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="DH"/>
-  <project path="vendor/nexus" name="android_vendor_nexus" remote="DH" revision="n" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="DH" revision="n" />
+  <!--<project path="vendor/nexus" name="android_vendor_nexus" remote="DH" revision="n" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="DH" revision="n" /> -->
 <!-- Gooogle Repositories -->  
 
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
