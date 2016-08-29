@@ -7,7 +7,7 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
   <remote name="DH" fetch="https://github.com/d8ahazard/" revision="master"/>
-  <default revision="master"
+  <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
