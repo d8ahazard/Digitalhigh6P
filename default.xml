@@ -13,7 +13,7 @@
            sync-j="4" />
 		   
 <!-- DH Repositories -->	
-  <project path="build" name="platform_build" groups="pdk,tradefed" remote="DH" >
+  <project path="build" name="platform_build" groups="pdk,tradefed" remote="DH" revision="nougat-release" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="device/huawei/angler" name="angler_device" groups="device,angler,broadcom_pdk" remote="DH" />
